@@ -218,6 +218,7 @@ def admin_dashboard(request):
         "cantidad_usuarios": User.objects.count(),
     })
 
+# KS-76 - HU-01: Gestión de usuarios y catálogo.
 
 @rol_requerido("Administrador")
 def admin_usuario_lista(request):
